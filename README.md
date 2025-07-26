@@ -39,20 +39,7 @@ Each microservice is isolated, independently deployable, and communicates via RE
 
 ---
 
-### 📁 Repository Structure
 
-```
-ReadWriteCompleteCode/
-├── user-service/
-├── author-service/
-├── blog-service/
-├── notification-service/
-├── gateway/                # Optional API Gateway (if present)
-├── shared/                 # Common config/utilities
-└── docker-compose.yml
-```
-
----
 
 ### ✅ Key Features
 
@@ -80,7 +67,7 @@ cd ReadWriteCompleteCode
 Create `.env` files for each microservice. Include the following variables:
 
 - `PORT=...`
-- `DB_URL=...` (MongoDB or PostgreSQL)
+- `DB_URL=...` 
 - `JWT_SECRET=...`
 - `REDIS_URL=...`
 - `RABBITMQ_URL=...`
@@ -95,17 +82,7 @@ docker-compose up --build
 
 ---
 
-### 📬 API Overview
 
-Here are some sample endpoints (paths may vary based on service configs):
-
-- `POST /api/users/signup`  
-- `POST /api/users/login`  
-- `GET /api/blogs/feed`  
-- `POST /api/blogs/create`  
-- `GET /api/authors/profile`
-
----
 
 ### 🧠 System Flow
 
